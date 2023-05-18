@@ -1,0 +1,49 @@
+Heart Disease Prediction
+This repository contains code and data for predicting the risk of heart disease in individuals based on a set of input features. The prediction model is built using machine learning techniques and aims to provide an early detection system for potential heart disease cases.
+
+Data
+The dataset used for training and evaluation is stored in the data directory. It consists of a CSV file named heart.csv, which contains anonymized patient information and corresponding labels indicating the presence or absence of heart disease.
+
+The features included in the dataset are as follows:
+
+Age: Age of the patient in years
+Sex: Gender of the patient (0 for female, 1 for male)
+CP: Chest pain type (0-3)
+Trestbps: Resting blood pressure in mm Hg
+Chol: Serum cholesterol in mg/dl
+FBS: Fasting blood sugar level > 120 mg/dl (0 for false, 1 for true)
+Restecg: Resting electrocardiographic results (0-2)
+Thalach: Maximum heart rate achieved
+Exang: Exercise-induced angina (0 for no, 1 for yes)
+Oldpeak: ST depression induced by exercise relative to rest
+Slope: Slope of the peak exercise ST segment (0-2)
+CA: Number of major vessels colored by fluoroscopy (0-3)
+Thal: Thalassemia, a blood disorder (0-3)
+The target variable is the presence of heart disease, indicated by the 'target' column in the dataset (0 for no disease, 1 for disease presence).
+
+Code
+The code for building and evaluating the heart disease prediction model is provided in the code directory. The main script is heart_disease_prediction.py, which performs the following steps:
+
+Loads the dataset from the CSV file
+Preprocesses the data by handling missing values and performing feature scaling
+Splits the data into training and testing sets
+Trains a machine learning model on the training data
+Evaluates the trained model on the testing data
+Outputs the performance metrics of the model, including accuracy, precision, recall, and F1 score
+Usage
+To use this heart disease prediction model, follow these steps:
+
+Clone this repository to your local machine.
+Install the required dependencies specified in the requirements.txt file.
+Place your own dataset or use the provided heart.csv file in the data directory.
+Run the heart_disease_prediction.py script to train and evaluate the model.
+Review the performance metrics displayed in the console output.
+Feel free to modify the code and experiment with different models or feature engineering techniques to further enhance the prediction accuracy.
+
+Contributors
+John Doe johndoe@example.com
+Jane Smith janesmith@example.com
+If you would like to contribute to this project, please open a pull request with your proposed changes.
+
+License
+This project is licensed under the MIT License.
